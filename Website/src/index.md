@@ -5,12 +5,12 @@ date: 2023-01-01
 
 ---
 
-[![Timecode Exporter](/img/icon.png)](/Timecode%20Exporter%20v1.0.0.zip){target="_blank"}
-[ＴＩＭＥＣＯＤＥ　ＥＸＰＯＲＴＥＲ](/Timecode%20Exporter%20v1.0.0.zip){target="_blank"}
+[![Timecode Exporter](/Timecode-Exporter/img/icon.png)](/Timecode%20Exporter%20v1.0.0.zip){target="_blank"}
+ＴＩＭＥＣＯＤＥ　ＥＸＰＯＲＴＥＲ
 •
 [Download for Windows](https://github.com/Timecode-Exporter/Timecode-Exporter/releases/download/v1.0.2/Windows_v1.0.2.zip){target="_blank"}
 [Download for Mac](https://github.com/Timecode-Exporter/Timecode-Exporter/releases/download/v1.0.2/Mac_v1.0.2.zip){target="_blank"}
 •
-<video controls><source src="https://private-user-images.githubusercontent.com/182068529/369589442-76fa0526-7bd7-4a4b-a3c4-86b290dd84cd.webm?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY4OTMzMDQsIm5iZiI6MTcyNjg5MzAwNCwicGF0aCI6Ii8xODIwNjg1MjkvMzY5NTg5NDQyLTc2ZmEwNTI2LTdiZDctNGE0Yi1hM2M0LTg2YjI5MGRkODRjZC53ZWJtP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDkyMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA5MjFUMDQzMDA0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTUwYzQ3OTUxZjIwZTk5ZWUzZDY2YWU5N2M2ODVhNmRhOGZkZTQ5YmUxMTlmZTA3YWEyNGJiOWI3Mjg4YzlhMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.vQkPhSqoMr0myC5z2JcuCSUuIcgyro8P7u8Fw9O5DwQ" type="video/mp4"/></video>
-<video controls><source src="https://private-user-images.githubusercontent.com/182068529/369589446-333f7e23-9459-4cc3-882c-2fa34f159cb7.webm?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY4OTMzMDQsIm5iZiI6MTcyNjg5MzAwNCwicGF0aCI6Ii8xODIwNjg1MjkvMzY5NTg5NDQ2LTMzM2Y3ZTIzLTk0NTktNGNjMy04ODJjLTJmYTM0ZjE1OWNiNy53ZWJtP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDkyMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA5MjFUMDQzMDA0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzkwNTUwMzFhYmMwOWZiNjhmNDQ2NjkyNTEyZjg4ZWUwNzM0ZjFlYzE0Mjc2ZWNlNjEzZTkyYmQ1MWM1OWNlMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.8XOXl2ho-8x2zQs_tQuiiwtNe602eENUaiERlUC_7jM" type="video/mp4"/></video>
+<video controls><source src="https://github.com/Timecode-Exporter/Timecode-Exporter/raw/refs/heads/main/Tutorials/Premiere%20%7C%20Timecode%20Exporter%20Tutorial.mp4" type="video/mp4"/></video>
+<video controls><source src="https://github.com/Timecode-Exporter/Timecode-Exporter/raw/refs/heads/main/Tutorials/Resolve%20%7C%20Timecode%20Exporter%20Tutorial.mp4" type="video/mp4"/></video>
 ❧
