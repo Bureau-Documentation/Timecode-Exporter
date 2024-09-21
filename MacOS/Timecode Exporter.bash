@@ -18,8 +18,8 @@ echo ""
 # Extract the desired time range and format it
 time_ranges=$(awk '{
     if ($1 ~ /^[0-9]+$/) {  # Check if the first column is a number
-        start_time = substr($5, 1, 8);  # Extract start time from column 5
-        end_time = substr($6, 1, 8);    # Extract end time from column 6
+        start_time = substr($7, 4);  # Extract start time from column 7, ignoring the first 3 characters
+        end_time = substr($8, 4);    # Extract end time from column 8, ignoring the first 3 characters
         print start_time " to " end_time;  # Print in the desired format
     }
 }' "$input_file")

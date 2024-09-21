@@ -8,8 +8,7 @@ from tkinterdnd2 import DND_FILES, TkinterDnD
 def resource_path(relative_path):
     """ Get the absolute path to the resource, works for dev and for PyInstaller """
     try:
-        # PyInstaller creates a temp folder and stores path in _MEIPASS
-        base_path = sys._MEIPASS
+        base_path = sys._MEIPASS  # PyInstaller creates a temp folder and stores path in _MEIPASS
     except Exception:
         base_path = os.path.abspath(".")
 
@@ -26,9 +25,10 @@ def process_file(file_path):
         with open(file_path, 'r') as file:
             for line in file:
                 columns = line.split()
-                if len(columns) > 5 and columns[0].isdigit():  # Check if the first column is a number
-                    start_time = columns[4][:8]  # Extract start time from column 5
-                    end_time = columns[5][:8]    # Extract end time from column 6
+                if len(columns) > 8 and columns[0].isdigit():  # Check if the first column is a number
+                    # Extract start time from column 7 and end time from column 8, ignoring the first 3 characters
+                    start_time = columns[6][3:]  # Column 7 is at index 6
+                    end_time = columns[7][3:]    # Column 8 is at index 7
                     time_ranges.append(f"{start_time} to {end_time}")
 
         if time_ranges:
