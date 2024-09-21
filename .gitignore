@@ -1,0 +1,12 @@
+.hidden
+.DS_Store
+
+Icon/Reference
+Tutorials/
+Website/
+Release/
+
+site/
+node_modules
+src/css/fonts/*
+src/img/*
