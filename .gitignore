@@ -3,10 +3,6 @@
 
 Icon/Reference
 Tutorials/TC Exporter.dra/
-Website/
 Release/
 
-site/
-node_modules
-src/css/fonts/*
-src/img/*
+Website/node_modules

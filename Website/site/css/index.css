@@ -1,0 +1,142 @@
+@import url("reset.css");
+/*----------------------------------------------------------------------------------------------------*/
+:root {
+  --line-height: 2;
+  --text-color: #D1D1CF;
+  --primary-background-color: #0E0E0F;
+  --secondary-background-color: #0E0E0F;
+  --primary-color: #31a8ff;
+  --secondary-color: #D1D1CF;
+}
+/*----------------------------------------------------------------------------------------------------*/
+@media (orientation: landscape) {:root {--font-size: 1.42rem;}}
+@media (orientation: portrait) {:root {--font-size: 1.4rem;}}
+@media (pointer: none), (pointer: coarse) {:root {--font-size: 1.22rem;}}
+@media (pointer: none), (pointer: coarse) and (max-width: 390px) {:root {--font-size: 1.16rem;}}
+@media (pointer: none), (pointer: coarse) and (max-width: 375px) {:root {--font-size: 1.11rem;}}
+@media (pointer: none), (pointer: coarse) and (max-width: 360px) {:root {--font-size: 1.06rem;}}
+@media (pointer: none), (pointer: coarse) and (min-width: 780px) {:root {--font-size: 1.22rem;}}
+/*----------------------------------------------------------------------------------------------------*/
+html {
+  -webkit-tap-highlight-color: transparent;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+body {
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga", "calt", "kern", "onum";
+  -webkit-font-feature-settings: "liga", "calt", "kern", "onum";
+  -ms-font-feature-settings: "liga", "calt", "kern", "onum";
+  -o-font-feature-settings: "liga", "calt", "kern", "onum";
+  font-feature-settings: "liga", "calt", "kern", "onum";
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  background: var(--secondary-background-color);
+  margin: 0 auto;
+  line-height: var(--line-height);
+  word-break: break-word;
+  hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+@media (pointer: none), (pointer: coarse) {
+  body { background: var(--primary-background-color); }
+}
+
+::-webkit-scrollbar, .wrapper details::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.wrapper {
+  background: var(--primary-background-color);
+  max-width: 26.5rem;
+  margin: 0 auto;
+  min-height: calc(100vh - (var(--font-size) * var(--line-height) * (2.6 + 1)));
+  text-align: center;
+  padding: calc(var(--font-size) * var(--line-height) * 1) calc(var(--font-size) * var(--line-height) * 1) calc(var(--font-size) * var(--line-height));
+}
+@media (pointer: none), (pointer: coarse) {
+.wrapper {
+  padding: calc(var(--font-size) * var(--line-height) * 1) calc(var(--font-size) * 1.8) 0;
+}
+}
+@media (pointer: none), (pointer: coarse) and (min-width: 780px) {
+.wrapper {
+  max-width: 22rem;
+  padding: calc(var(--font-size) * var(--line-height) * 1) calc(var(--font-size) * 1.8) 0;
+}
+}
+/*----------------------------------------------------------------------------------------------------*/
+p + p {
+  text-indent: calc(var(--font-size) * 1.067);
+}
+p.image + p {
+  text-indent: 0;
+  margin-top: calc(var(--font-size) * var(--line-height) * 1);
+}
+span.last {
+  white-space: nowrap;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+a:link, .wrapper a:visited {
+  outline: none;
+  text-decoration: none;
+  color: var(--secondary-color);
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+a:hover, .wrapper a:hover {
+  opacity: 90%;
+}
+a.links, a.links:visited {
+  color: var(--text-color);
+}
+/*----------------------------------------------------------------------------------------------------*/
+img {
+  height: calc(var(--font-size) * var(--line-height) * 5);
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  padding-bottom: calc(var(--font-size) * var(--line-height) * -1);
+}
+video {
+  height: calc(var(--font-size) * var(--line-height) * 6);
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  padding-bottom: calc(var(--font-size) * var(--line-height) * -1);
+}
+/*----------------------------------------------------------------------------------------------------*/
+.sc {
+  font-feature-settings: "smcp", "c2sc";
+  font-style: normal !important;
+  text-indent: 0;
+  text-transform: lowercase;
+}
+.em {
+  color: var(--primary-color);
+}
+/
