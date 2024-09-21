@@ -6,37 +6,6 @@ An utility to export timecodes from a Sequence in Premiere or a Timeline in DaVi
 
 [Resolve | Timecode Exporter Tutorial.webm](https://github.com/user-attachments/assets/333f7e23-9459-4cc3-882c-2fa34f159cb7)
 
-
-## Usage with Premiere
-
-```
-We need to export the Sequence first. After editing, open Premiere and select the Sequence
-
-Go to File → Export → EDL...
-(This is a file format with timecode data.)
-
-You can leave the default options and click ok. Save the file whereever you'd like
-
-Open Timecode Exporter. Drag and drop the .edl file
-
-The timecodes are display and automatically copied to your clipboard
-```
-
-## Usage with DaVinci Resolve
-
-```
-We need to export the Timeline first. After editing, open Resolve and select the Timeline
-
-Go to File → Export → Timeline...
-(This is a file format with timecode data.)
-
-Export as EDL files. Save the file whereever you'd like
-
-Open Timecode Exporter. Drag and drop the .edl file
-
-The timecodes are display and automatically copied to your clipboard
-```
-
 ## Development (Windows)
 
 ```
@@ -67,15 +36,44 @@ ln -s /Applications /Users/ABC/Downloads/Timecode\ Exporter/MacOS/dmg/Copy\ to\ 
 (cd /Users/ABC/Documents/Timecode\ Exporter/Release/Timecode\ Exporter\ v1.0.0/For\ MacOS && zip -r ../out.zip .)
 ```
 
-## Development (MacOS)
+## Development (Python version for MacOS)
 
 ```
+pip install tkinterdnd2 pyperclip tk
 
-Python version:
 pyinstaller --onefile --windowed --add-data "timecode_exporter.icns:." --add-data "/opt/miniconda3/envs/timecode_exporter/lib/python3.9/site-packages/tkinterdnd2/tkdnd/osx-arm64:TkinterDnD2" --icon=timecode_exporter.icns timecode_exporter.py
 
 pyinstaller --onefile --windowed --add-data "timecode_exporter.icns:." --add-data "/opt/miniconda3/envs/timecode_exporter/lib/python3.9/site-packages/tkinterdnd2/tkdnd/osx-x64:TkinterDnD2" --icon=timecode_exporter.icns timecode_exporter.py
-
-
-pip install tkinterdnd2 pyperclip tk
 ```
+
+
+## Website
+
+```
+# Initialize
+docker run --rm --name=npm -u 1000 -v /path/to/website:/app -w /app node:lts-slim npm init -y
+
+# Install node modules
+docker run --rm --name=npm -u 1000 -v /path/to/website:/app -w /app node:lts-slim npm install \
+  npm \
+  @11ty/eleventy \
+  luxon \
+  html-minifier \
+  clean-css \
+  markdown-it-attrs \
+  markdown-it-bracketed-spans \
+  markdown-it-anchor
+```
+```
+# Generate website
+docker run --rm --name=npm -u 1000 -v /path/to/website:/app -w /app --network none node:lts-slim npx eleventy
+```
+
+# Test
+docker run --rm --name my-website -p 8080:80 -v /path/to/website:/usr/share/nginx/html -d nginx:alpine
+
+```
+# Update
+docker run --rm --name=npm -u 1000 -v /path/to/website:/app -w /app node:lts-slim npm update
+```
+
