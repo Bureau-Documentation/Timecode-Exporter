@@ -2,6 +2,11 @@
 
 An utility to export timecodes from a Sequence in Premiere or a Timeline in DaVinci Resolve.
 
+[Premiere | Timecode Exporter Tutorial.webm](https://github.com/user-attachments/assets/76fa0526-7bd7-4a4b-a3c4-86b290dd84cd)
+
+[Resolve | Timecode Exporter Tutorial.webm](https://github.com/user-attachments/assets/333f7e23-9459-4cc3-882c-2fa34f159cb7)
+
+
 ## Usage with Premiere
 
 ```
