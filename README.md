@@ -45,35 +45,3 @@ pyinstaller --onefile --windowed --add-data "timecode_exporter.icns:." --add-dat
 
 pyinstaller --onefile --windowed --add-data "timecode_exporter.icns:." --add-data "/opt/miniconda3/envs/timecode_exporter/lib/python3.9/site-packages/tkinterdnd2/tkdnd/osx-x64:TkinterDnD2" --icon=timecode_exporter.icns timecode_exporter.py
 ```
-
-
-## Website
-
-```
-# Initialize
-docker run --rm --name=npm -u 1000 -v /path/to/website:/app -w /app node:lts-slim npm init -y
-
-# Install node modules
-docker run --rm --name=npm -u 1000 -v /path/to/website:/app -w /app node:lts-slim npm install \
-  npm \
-  @11ty/eleventy \
-  luxon \
-  html-minifier \
-  clean-css \
-  markdown-it-attrs \
-  markdown-it-bracketed-spans \
-  markdown-it-anchor
-```
-```
-# Generate website
-docker run --rm --name=npm -u 1000 -v /path/to/website:/app -w /app --network none node:lts-slim npx eleventy
-```
-
-# Test
-docker run --rm --name my-website -p 8080:80 -v /path/to/website:/usr/share/nginx/html -d nginx:alpine
-
-```
-# Update
-docker run --rm --name=npm -u 1000 -v /path/to/website:/app -w /app node:lts-slim npm update
-```
-
