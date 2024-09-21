@@ -25,11 +25,15 @@ def process_file(file_path):
         with open(file_path, 'r') as file:
             for line in file:
                 columns = line.split()
-                if len(columns) > 8 and columns[0].isdigit():  # Check if the first column is a number
-                    # Extract start time from column 7 and end time from column 8, ignoring the first 3 characters
-                    start_time = columns[6][3:]  # Column 7 is at index 6
-                    end_time = columns[7][3:]    # Column 8 is at index 7
-                    time_ranges.append(f"{start_time} to {end_time}")
+                # Check if the first column is a number and lines have enough columns
+                if len(columns) > 7 and columns[0].isdigit():  # Checking for at least 8 columns
+                    # Extract time from column 7 and column 8
+                    start_time = columns[6]  # Column 7 is at index 6
+                    end_time = columns[7]    # Column 8 is at index 7
+                    
+                    # Ignore the first three digits and get HH:MM:SS
+                    start_time_formatted = f"{start_time[3:]} to {end_time[3:]}"  # Ignoring the first 3 digits
+                    time_ranges.append(start_time_formatted)
 
         if time_ranges:
             formatted_time_ranges = "\n\n".join(time_ranges)

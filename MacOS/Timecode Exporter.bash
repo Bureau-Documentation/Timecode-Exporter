@@ -24,8 +24,8 @@ time_ranges=$(awk '{
     }
 }' "$input_file")
 
-# Format time ranges for clipboard (with two blank lines between)
-formatted_time_ranges=$(echo "$time_ranges" | awk '{print $0 "\n\n"}')
+# Format time ranges for clipboard (with one blank lines between)
+formatted_time_ranges=$(echo "$time_ranges" | awk '{print $0 "\n"}')
 
 # Copy the time ranges to clipboard
 echo -e "$formatted_time_ranges" | pbcopy
