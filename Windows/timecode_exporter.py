@@ -31,9 +31,11 @@ def process_file(file_path):
                     start_time = columns[6]  # Column 7 is at index 6
                     end_time = columns[7]    # Column 8 is at index 7
                     
-                    # Ignore the first three digits and get HH:MM:SS
-                    start_time_formatted = f"{start_time[3:]} to {end_time[3:]}"  # Ignoring the first 3 digits
-                    time_ranges.append(start_time_formatted)
+                    # Get the first 8 characters for both start_time and end_time
+                    start_time_formatted = start_time[:8]  # First 8 characters
+                    end_time_formatted = end_time[:8]      # First 8 characters
+                    
+                    time_ranges.append(f"{start_time_formatted} to {end_time_formatted}")
 
         if time_ranges:
             formatted_time_ranges = "\n\n".join(time_ranges)
