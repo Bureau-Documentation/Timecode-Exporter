@@ -1,3 +1,0 @@
-([('timecode_exporter',
-   '/Users/producer/Downloads/Mac/dist/timecode_exporter',
-   'EXECUTABLE')],)

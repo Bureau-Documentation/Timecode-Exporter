@@ -1,6 +1,7 @@
 .hidden
 .DS_Store
-
+.zed
 Icon/Reference
 Tutorials/Tutorial.dra/
 Release/
+fyne-cross/
