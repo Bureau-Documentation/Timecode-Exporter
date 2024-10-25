@@ -15,7 +15,7 @@ go clean -modcache
 
 ## Compiling
 ```
-fyne-cross windows -app-id Timecode.Exporter -no-cache -name "Timecode Exporter" -app-version 2.0.0 -icon ./Icon/Icon.icns -arch=amd64
+fyne-cross windows -app-id Timecode.Exporter -no-cache -name "Timecode Exporter" -app-version 2.0.0 -icon ./Icon/Icon.png -arch=amd64
 
-fyne-cross darwin -app-id Timecode.Exporter -no-cache -name "Timecode Exporter" -app-version 2.0.0 -icon ./Icon/Icon.icns -arch=arm64,amd64
+fyne-cross darwin -app-id Timecode.Exporter -no-cache -name "Timecode Exporter" -app-version 2.0.0 -icon ./Icon/Icon.png -arch=arm64,amd64
 ```
